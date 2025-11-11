@@ -2,8 +2,8 @@
   "name": "PWA Cámara",
   "short_name": "CamaraPWA",
   "description": "Aplicación web progresiva para capturar fotos con la cámara del dispositivo",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "https://chrisale117.github.io/pwa-camara/",
+  
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
