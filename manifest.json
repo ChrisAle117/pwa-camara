@@ -2,21 +2,24 @@
   "name": "PWA Cámara",
   "short_name": "CamaraPWA",
   "description": "Aplicación web progresiva para capturar fotos con la cámara del dispositivo",
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "192.png",
+      "src": "./192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable any"
     },
     {
-      "src": "512.png",
+      "src": "./512.png", 
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable any"
     }
   ]
 }

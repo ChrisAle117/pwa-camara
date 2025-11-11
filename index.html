@@ -50,14 +50,36 @@
         }
         #cameraContainer {
             margin-bottom: 18px;
+            display: none;
         }
         #video {
             width: 100%;
+            height: auto;
+            max-height: 400px;
             border-radius: 12px;
             background: #000;
+            object-fit: cover;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+        #takePhoto {
+            width: 100%;
+            margin-top: 12px;
         }
         #canvas {
             display: none;
+        }
+        
+        /* Mejoras para móviles */
+        @media (max-width: 480px) {
+            .container {
+                margin: 20px auto 0 auto;
+                padding: 20px 16px;
+                border-radius: 0;
+            }
+            #video {
+                max-height: 60vh;
+            }
         }
         .gallery {
             display: grid;
@@ -80,11 +102,11 @@
             <button id="openCamera">Abrir Cámara</button>
             <button id="toggleCamera">Cambiar Cámara</button>
         </div>
-        <div id="cameraContainer" style="display:none;">
-            <video id="video" autoplay playsinline></video>
-            <button id="takePhoto" style="width:100%;margin-top:12px;">Tomar Foto</button>
+        <div id="cameraContainer">
+            <video id="video" autoplay playsinline webkit-playsinline></video>
+            <button id="takePhoto">Tomar Foto</button>
         </div>
-        <canvas id="canvas" style="display:none;"></canvas>
+        <canvas id="canvas"></canvas>
         <div class="gallery" id="gallery"></div>
     </div>
 

@@ -5,10 +5,10 @@
 // 3.1. ⚙️ Variables de Configuración Inicial
 const CACHE_NAME = 'camara-pwa-v1'; // Nombre/versión del caché
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/app.js',
-    '/manifest.json'
+    './',
+    './index.html',
+    './app.js',
+    './manifest.json'
 ];
 
 // ============================================
