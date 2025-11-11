@@ -24,8 +24,8 @@ async function openCamera() {
         const constraints = {
             video: {
                 facingMode: useFrontCamera ? 'user' : 'environment',
-                width: { ideal: 320 },
-                height: { ideal: 240 }
+                width: { ideal: 1280 },
+                height: { ideal: 720 }
             }
         };
         stream = await navigator.mediaDevices.getUserMedia(constraints);
